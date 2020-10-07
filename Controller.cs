@@ -24,7 +24,7 @@ namespace FakeTerminal
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferWidth = Width;
             graphics.PreferredBackBufferHeight = Height;
-            Content.RootDirectory = "Content";
+            Content.RootDirectory = ".";
             IsMouseVisible = true;
         }
 
