@@ -14,7 +14,7 @@ namespace FakeTerminal
 
         private int[] held = new int[254];
 
-        private static int heldPause = 100;
+        private static int heldPause = 25;
 
         public int Cursor = 0;
 
@@ -46,9 +46,19 @@ namespace FakeTerminal
 
 
             if (held[(int)key] < heldPause && held[(int)key] != 0)
-                return;
-            else
+            {
                 held[(int)key]++;
+                return;
+            }
+            else
+            {
+                held[(int)key]++;
+                if (held[(int)key] % 2 != 1)
+                {
+                    return;
+                }
+            }
+
 
             switch (key)
             {
@@ -260,6 +270,10 @@ namespace FakeTerminal
                     Controller.Instance.SendText(Text);
                     Text = "";
                     Cursor = 0;
+                    break;
+                case Keys.Escape:
+                    Cursor = 0;
+                    Text = "";
                     break;
             }
         }
