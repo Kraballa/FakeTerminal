@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fake Terminal", "Fake Terminal.csproj", "{08F6BBCF-7394-40E6-9C46-A0EFC88947C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08F6BBCF-7394-40E6-9C46-A0EFC88947C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F6BBCF-7394-40E6-9C46-A0EFC88947C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F6BBCF-7394-40E6-9C46-A0EFC88947C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F6BBCF-7394-40E6-9C46-A0EFC88947C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DABA0A9B-D604-4AA2-B5F5-185BC2C6826D}
+	EndGlobalSection
+EndGlobal
