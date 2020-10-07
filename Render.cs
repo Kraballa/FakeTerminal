@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 namespace FakeTerminal
 {
     /// <summary>
-    /// Renderer class that reveals various pixel-based methods globally. Based on the `Draw` class of the Monogle game engine.
-    /// See `https://bitbucket.org/MattThorson/monocle-engine/src/default/Monocle/Util/Draw.cs`
+    /// Renderer class that reveals various pixel-based methods globally. Based on the `Draw` class from Monocle.
     /// </summary>
     public class Draw
     {

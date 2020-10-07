@@ -5,6 +5,9 @@ using System.Text;
 
 namespace FakeTerminal
 {
+    /// <summary>
+    /// Text Input class that handles key input and an input string and cursor. Loosely based on the 'Commands' class from Monocle
+    /// </summary>
     public class TextController
     {
         public string Text { get; private set; }
@@ -35,6 +38,7 @@ namespace FakeTerminal
                 }
             }
         }
+
 
         public void HandleKey(Keys key)
         {
