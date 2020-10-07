@@ -9,6 +9,8 @@ namespace FakeTerminal.Display
     {
         private Queue<DisplayEntity> Entities = new Queue<DisplayEntity>();
 
+        private TextEntity Input = new TextEntity("");
+
         public string GetAllText()
         {
             throw new NotImplementedException();
@@ -32,7 +34,8 @@ namespace FakeTerminal.Display
                 ent.Render(4, pos, Controller.Width);
                 pos += ent.GetHeight(Controller.Width);
             }
-            Draw.Text(Controller.Instance.TextController.Text, new Vector2(4, pos), Color.White);
+            Input.Text = Controller.Instance.TextController.Text;
+            Input.Render(4, pos, Controller.Width);
             float xPos = Controller.Instance.TextController.Cursor;
             xPos *= Draw.CharWidth;
             Draw.Line(new Vector2(xPos + 4, pos), new Vector2(xPos + 4, pos + Draw.CharHeight), Color.White);

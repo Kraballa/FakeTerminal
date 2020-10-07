@@ -34,8 +34,8 @@ namespace FakeTerminal
 
             Controller.Instance.Content.RootDirectory = ".";
             Font = Controller.Instance.Content.Load<SpriteFont>("Fonts/Consolas");
-            CharWidth = Font.MeasureString("A").X;
-            CharHeight = Font.MeasureString("A").Y;
+            CharWidth = Font.MeasureString("AAAAAAAAAA").X / 10;
+            CharHeight = Font.MeasureString("AAAAAAAAAA").Y / 10;
         }
 
         public static void Point(Vector2 at, Color color)
